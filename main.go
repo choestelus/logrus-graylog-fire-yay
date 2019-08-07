@@ -10,5 +10,10 @@ func main() {
 	defer hook.Flush()
 
 	logrus.AddHook(hook)
-	logrus.Infof("yayyy")
+	logrus.Tracef("trace: yay")
+	logrus.Debugf("debug: yayy")
+	logrus.Infof("info: yayyy")
+	logrus.Warnf("warn: yayyyy")
+	logrus.Errorf("error: doge")
+	logrus.Panicf("panic: XD")
 }
